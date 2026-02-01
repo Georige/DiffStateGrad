@@ -31,7 +31,7 @@ def compute_rank_for_explained_variance(singular_values, explained_variance_cuto
         rank = np.searchsorted(cumulative_variance, explained_variance_cutoff) + 1
         total_rank += rank
     return int(total_rank / 3)
-
+import time
 def compute_svd_and_adaptive_rank(z_t, var_cutoff):
     """
     Compute SVD and adaptive rank for the input tensor.
@@ -44,14 +44,33 @@ def compute_svd_and_adaptive_rank(z_t, var_cutoff):
         tuple: (U, s, Vh, adaptive_rank) where U, s, Vh are SVD components
                and adaptive_rank is the computed rank
     """
-    # Compute SVD of current image representation
+
+    # 1. begin
+    start_time = time.perf_counter()
+    
+    # 2. run
     U, s, Vh = torch.linalg.svd(z_t[0], full_matrices=False)
     
+    # 3. end
+    end_time = time.perf_counter()
+    
+    # 4. minus
+    time1 = end_time - start_time
+    
+
+    # Compute SVD of current image representation
+    # implement of rSVD
+    start_time = time.perf_counter()
+    U, sb, Vh = randomized_svd(z_t[0],epsilon = 0.1)
+    end_time = time.perf_counter()
+    time2 = end_time - start_time
+    excutive_time = time1 - time2
+    print(f"relative time(svd-rsvd): {execution_time:.6f} 秒")
     # Compute adaptive rank
     s_numpy = s.detach().cpu().numpy()
 
     adaptive_rank = compute_rank_for_explained_variance([s_numpy], var_cutoff)
-    
+    print("rank:",adaptive_rank)
     return U, s, Vh, adaptive_rank
 
 def apply_diffstategrad(norm_grad, iteration_count, period, U=None, s=None, Vh=None, adaptive_rank=None):
