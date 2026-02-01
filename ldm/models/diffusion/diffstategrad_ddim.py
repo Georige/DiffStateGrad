@@ -77,7 +77,7 @@ def compute_svd_and_adaptive_rank(z_t, var_cutoff):
     end_time = time.perf_counter()
     time2 = end_time - start_time
     executive_time = time1 - time2
-    print(f"relative time(svd-rsvd): {execution_time:.6f} 秒")
+    print(f"relative time(svd-rsvd): {executive_time:.6f} 秒")
     # Compute adaptive rank
     s_numpy = s.detach().cpu().numpy()
 
