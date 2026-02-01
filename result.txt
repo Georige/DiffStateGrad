@@ -1,0 +1,83 @@
+# Experiment 1
+Data shape for DDIM sampling is (1, 3, 64, 64), eta 0.0
+DDIM Sampler:  34% 169/500 [01:11<02:29,  2.21it/s]relative time(svd-rsvd): -10.675921 秒
+rank: 205
+DDIM Sampler:  36% 179/500 [01:52<04:52,  1.10it/s]relative time(svd-rsvd): -11.121409 秒
+rank: 206
+DDIM Sampler:  38% 189/500 [02:32<04:35,  1.13it/s]relative time(svd-rsvd): -11.417583 秒
+rank: 208
+DDIM Sampler:  40% 199/500 [03:14<04:28,  1.12it/s]relative time(svd-rsvd): -11.458303 秒
+rank: 209
+DDIM Sampler:  42% 209/500 [03:55<04:17,  1.13it/s]relative time(svd-rsvd): -11.219030 秒
+rank: 209
+DDIM Sampler:  44% 219/500 [04:35<04:07,  1.14it/s]relative time(svd-rsvd): -11.380488 秒
+rank: 209
+DDIM Sampler:  46% 229/500 [05:16<04:00,  1.13it/s]relative time(svd-rsvd): -11.398644 秒
+rank: 209
+DDIM Sampler:  48% 239/500 [05:57<03:51,  1.13it/s]relative time(svd-rsvd): -11.141715 秒
+rank: 209
+DDIM Sampler:  50% 249/500 [06:38<03:42,  1.13it/s]relative time(svd-rsvd): -11.230191 秒
+rank: 205
+DDIM Sampler:  52% 259/500 [07:18<03:32,  1.14it/s]relative time(svd-rsvd): -10.880200 秒
+rank: 205
+DDIM Sampler:  54% 269/500 [07:59<03:22,  1.14it/s]relative time(svd-rsvd): -10.707360 秒
+rank: 206
+DDIM Sampler:  56% 279/500 [08:39<03:16,  1.12it/s]relative time(svd-rsvd): -10.694687 秒
+rank: 205
+DDIM Sampler:  58% 289/500 [09:19<03:09,  1.12it/s]relative time(svd-rsvd): -10.500084 秒
+rank: 204
+DDIM Sampler:  60% 299/500 [09:59<02:56,  1.14it/s]relative time(svd-rsvd): -10.608509 秒
+rank: 204
+DDIM Sampler:  62% 309/500 [10:40<02:53,  1.10it/s]relative time(svd-rsvd): -10.953121 秒
+rank: 202
+DDIM Sampler:  64% 319/500 [11:21<02:42,  1.12it/s]relative time(svd-rsvd): -11.348021 秒
+rank: 202
+DDIM Sampler:  66% 329/500 [12:02<02:33,  1.11it/s]relative time(svd-rsvd): -11.390943 秒
+rank: 201
+DDIM Sampler:  68% 339/500 [12:43<02:21,  1.14it/s]relative time(svd-rsvd): -0.802805 秒
+rank: 57
+DDIM Sampler:  70% 349/500 [16:00<07:00,  2.78s/it]relative time(svd-rsvd): -0.800910 秒
+rank: 57
+DDIM Sampler:  72% 359/500 [19:13<06:33,  2.79s/it]relative time(svd-rsvd): -0.786314 秒
+rank: 57
+DDIM Sampler:  74% 369/500 [22:41<06:28,  2.97s/it]relative time(svd-rsvd): -1.177600 秒
+rank: 57
+DDIM Sampler:  76% 379/500 [25:42<05:19,  2.64s/it]relative time(svd-rsvd): -0.792857 秒
+rank: 57
+DDIM Sampler:  78% 389/500 [29:01<05:14,  2.83s/it]relative time(svd-rsvd): -0.783588 秒
+rank: 56
+DDIM Sampler:  80% 399/500 [31:43<04:02,  2.40s/it]relative time(svd-rsvd): -0.792140 秒
+rank: 57
+DDIM Sampler:  82% 409/500 [34:40<03:53,  2.57s/it]relative time(svd-rsvd): -0.775118 秒
+rank: 56
+DDIM Sampler:  84% 419/500 [37:05<02:57,  2.19s/it]relative time(svd-rsvd): -0.765225 秒
+rank: 57
+DDIM Sampler:  86% 429/500 [39:31<02:36,  2.20s/it]relative time(svd-rsvd): -0.815033 秒
+rank: 57
+DDIM Sampler:  88% 439/500 [42:01<02:16,  2.23s/it]relative time(svd-rsvd): -0.758146 秒
+rank: 56
+DDIM Sampler:  90% 449/500 [44:23<01:50,  2.17s/it]relative time(svd-rsvd): -0.778527 秒
+rank: 57
+DDIM Sampler:  92% 459/500 [46:48<01:30,  2.20s/it]relative time(svd-rsvd): -1.071235 秒
+rank: 57
+DDIM Sampler:  94% 469/500 [49:10<01:06,  2.15s/it]relative time(svd-rsvd): -0.776321 秒
+rank: 56
+DDIM Sampler:  96% 479/500 [51:43<00:47,  2.27s/it]relative time(svd-rsvd): -1.121667 秒
+rank: 56
+DDIM Sampler:  98% 489/500 [53:36<00:19,  1.80s/it]relative time(svd-rsvd): -0.777843 秒
+rank: 56
+DDIM Sampler: 100% 500/500 [55:30<00:00,  6.66s/it]
+relative time(svd-rsvd): -0.786932 秒
+rank: 56
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/usr/local/lib/python3.12/dist-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Downloading: "https://download.pytorch.org/models/vgg16-397923af.pth" to /root/.cache/torch/hub/checkpoints/vgg16-397923af.pth
+100% 528M/528M [00:08<00:00, 68.4MB/s]
+Loading model from: /usr/local/lib/python3.12/dist-packages/lpips/weights/v0.1/vgg.pth
+measurement psnr:  26.739238500799722
+measurement nmse:  0.008155140094459057
+measurement ssim:  0.68996567
+measurement lpips:  0.2891526520252228
