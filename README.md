@@ -54,7 +54,7 @@ For complete implementation details, please refer to [`diffstategrad_utils.py`](
 ### 1) Clone the repository
 
 ```
-git clone https://github.com/rzirvi1665/DiffStateGrad.git
+git clone https://github.com/Georige/DiffStateGrad.git
 
 cd DiffStateGrad
 ```
